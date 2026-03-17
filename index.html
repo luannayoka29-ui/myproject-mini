@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LIST MENU</title>
+        <link rel="shortcut icon" href="images/solariabg.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>LIST MENU</h1>
+        <h2>MAKANAN</h2>
+        <table>
+            <tr class="th">
+                <th>Nama</th>
+                <th>Gambar</th>
+                <th>Tersedia/TidakTersedia</th>
+            </tr>
+            <tr id="ganjil">
+                <td>Rendang</td>
+                <td><a href="https://id.wikipedia.org/wiki/Rendang"><img src="images/rendang.jpg" alt="Rendang" width="150px" height="150px"></a></td>
+                <td>Tersedia</td>
+            </tr>
+            <tr id="genap">
+                <td>Pad Thai</td>
+                <td><a href="https://id.wikipedia.org/wiki/Pad_thai"><img src="images/padthai.jpg" alt="Pad Thai" width="150px" height="150px"></a></td>
+                <td>Tersedia</td>
+            </tr>
+            <tr id="ganjil">
+                <td>Sushi</td>
+                <td><a href="https://id.wikipedia.org/wiki/Sushi"><img src="images/sushi.jpg" alt="Sushi" width="150px" height="150px"></a></td>
+                <td>Tersedia</td>
+            </tr>
+            <tr id="genap">
+                <td>Pizza</td>
+                <td><a href="https://id.wikipedia.org/wiki/Piza"><img src="images/pizza.jpg" alt="Pizza" width="150px" height="150px"></a></td>
+                <td>Tidak Tersedia</td>
+            </tr>
+            <tr id="ganjil">
+                <td>Burger</td>
+                <td><a href="https://id.wikipedia.org/wiki/Hamburger"><img src="images/burger.jpg" alt="Burger" width="150px" height="150px"></a></td>
+                <td>Tidak Tersedia</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>MINUMAN</h2>
+        <ul>
+            <li>Tea<a href="https://id.wikipedia.org/wiki/Teh"><img src="images/Tea.jpg" alt="Tea" align="top" width="150px" height="150px"></a></li><br>
+            <li>Coffee <a href="https://id.wikipedia.org/wiki/Kopi"><img src="images/coffee.JPG" alt="Coffee" align="top" width="150px" height="150ox"></a></li><br>
+            <li>Water <a href="https://en.wikipedia.org/wiki/Water"><img src="images/Water.jpg" alt="Water" align="top" width="150px" height="150px"></a></li><br>
+            <li>Fruit Jiuce <a href="https://en.wikipedia.org/wiki/Juice"><img src="images/fruitjuice.jpg" alt="Fruit Juice" align="top" width="150px" height="150px"></a></li><br>
+        </ul>
+        <hr>
+        <h2>PESANAN</h2>
+        <form>
+            <label for="namal">Nama Lengkap</label><br>
+            <input type="text" id="namal" name="namal"><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="ig">Intagram</label><br>
+            <input type="" id="ig" name="ig"><br><br>
+
+            <fieldset>
+                <legend>Pesanan</legend>
+                <label for="makanan"><strong>Makanan</strong></label>
+                <select name="makanan" id="makanan">
+                    <option value="Rendang">Rendang</option>
+                    <option value="Pad Thai">Pad Thai</option>
+                    <option value="Sushi">Sushi</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Burger">Burger</option>
+                </select><br><br>
+                <strong>Minuman</strong><br>
+                <input type="radio" id="tea" name="minuman" value="tea">
+                <label for="tea">Tea</label><br>
+                <input type="radio" id="coffee" name="minuman" value="coffee">
+                <label for="coffee">Coffee</label><br>
+                <input type="radio" id="water" name="minuman" value="water">
+                <label for="water">Water</label><br>
+                <input type="radio" id="fruitjuice" name="minuman" value="fruitjuice">
+                <label for="fruitjuice">Fruit Juice</label><br><br>
+                <strong>Cemilan</strong><br>
+                <input type="checkbox" name="cemilan" id="cemilan" value="kentang">
+                <label for="kentang">Kentang</label><br>
+                <input type="checkbox" name="cemilan" id="cemilan" value="bakwan">
+                <label for="bakwan">Bakwan</label><br>
+                <input type="checkbox" name="cemilan" id="cemilan" value="siomay">
+                <label for="siomay">Siomay</label><br>
+                <input type="checkbox" name="cemilan" id="cemilan" value="tempe">
+                <label for="tempe">Tempe</label><br>
+                <input type="checkbox" name="cemilan" id="cemilan" value="pisang">
+                <label for="pisang">Pisang</label><br>
+            </fieldset><br><br>
+            <textarea name="pesan" id="pesan" rows="10" cols="50">Berikan Catatan!</textarea><br><br>
+            <input type="submit" value="Kirim" id="submit">
+            <input type="reset" value="Reset" id="reset">
+        </form>
+    </body>
+</html>
